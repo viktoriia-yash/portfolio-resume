@@ -1,58 +1,210 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* about page */
+.container-about-one {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.image-box {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.about-one {
+  flex: 1;
+}
+
+.box-one {
+  margin: 25px 0;
+}
+
+.about-head {
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #880e4f;
+}
+
+.box-one p,
+.box-two p {
+  font-size: 15px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.container-about-two {
+  display: flex;
+  width: 50%;
+  margin: 40px auto;
+  align-items: center;
+}
+
+/* contact page */
+.logo {
+  padding: 5px;
+  border: 3px solid #880e4f;
+  font-size: 20px;
+  font-weight: 900;
+}
+.container-contact {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-head {
+  font-size: 43px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #880e4f;
+}
+
+.contact-text p {
+  font-size: 17px;
+  line-height: 150%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-text a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 #880e4f;
+  color: #880e4f;
+  margin: 0 -0.25rem;
+  padding: 0.55rem 0.55rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-text a:hover {
+  box-shadow: inset 100px 0 0 0 #880e4f;
+  color: #fff;
+}
+
+.contact-links,
+.my-work-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+/* ANIMATION */
+.homepage,
+.about-page,
+.portfolio-page,
+.contact-page {
+  animation: transitionIn 0.77s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotatex(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/* navigation to ALL pages */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
 }
 
 .logo {
-  color: #000;
   padding: 5px;
-  border: 3px solid #ff5e5b;
+  border: 3px solid #880e4f;
+  font-size: 20px;
+  font-weight: 900;
 }
 
-.nav-links {
+.navbar-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
-.nav-links li {
+.navbar-links li {
   list-style: none;
 }
 
-.nav-links a {
+.navbar-links a {
   color: #000;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: 900;
-  font-size: 17px;
-  padding: 0 10px;
+  font-size: 13px;
   text-transform: uppercase;
+  padding: 0 10px;
+  position: relative;
 }
 
-.burger {
+.navlinks::after {
+  content: "";
+  position: absolute;
+  background-color: #880e4f;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.navlinks:hover::after {
+  width: 100%;
+}
+
+.menu-btn {
   display: none;
   cursor: pointer;
 }
 
-.burger div {
+.menu-btn div {
   width: 30px;
   height: 3px;
   background-color: #000;
-  margin: 3px;
+  margin: 5px;
   transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-links {
+  .navbar-links {
+    width: 60%;
+  }
+
+  .container-about-one {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .container-about-two {
     width: 60%;
   }
 }
@@ -61,26 +213,30 @@ nav {
   body {
     overflow-x: hidden;
   }
-  .nav-links {
+  .navbar-links {
     position: absolute;
-    right: 0px;
+    right: 0;
     height: 92vh;
     top: 8vh;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     transform: translateX(100%);
-    transition: transform 0.1s ease-in;
+    transition: transform 0.5s ease-in;
   }
 
-  .nav-links li {
+  .navbar-links li {
     opacity: 0;
   }
 
-  .burger {
+  .menu-btn {
     display: block;
+  }
+
+  .container-about-two {
+    width: 60%;
   }
 }
 
@@ -88,7 +244,7 @@ nav {
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade {
+@keyframes navLinksFade {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -100,7 +256,7 @@ nav {
 }
 
 .toggle .line-one {
-  transform: rotate(-50deg) translate(-3px, 5px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line-two {
@@ -108,9 +264,5 @@ nav {
 }
 
 .toggle .line-three {
-  transform: rotate(50deg) translate(-3px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
-
-/* 
-
-*/
