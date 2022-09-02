@@ -28,6 +28,23 @@
   }
 }
 
+/* ======= HOMEPAGE ======= */
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+}
+
+.homepage-greeting {
+  font-size: 13em;
+}
+
+.homepage-introduction {
+  font-size: 2rem;
+}
 /* ======= ABOUT PAGE ======= */
 .container-about-one {
   display: flex;
@@ -139,7 +156,7 @@
 /* ======= CONTACT PAGE ======= */
 .logo {
   padding: 5px;
-  border: 3px solid #880e4f;
+  border: 3px solid #000;
   font-size: 20px;
   font-weight: 900;
 }
