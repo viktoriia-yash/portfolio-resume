@@ -43,7 +43,8 @@
 }
 
 .homepage-introduction {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 /* ======= ABOUT PAGE ======= */
 .container-about-one {
@@ -133,7 +134,7 @@
 }
 
 .wip {
-  padding: 10px 0 26px 0;
+  padding: 10px 0 27px 0;
 }
 
 .portfolio-title {
