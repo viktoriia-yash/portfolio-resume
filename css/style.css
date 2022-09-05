@@ -205,9 +205,19 @@
 .contact-links,
 .my-work-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px 0;
 }
+
+.linkedin-l,
+.email-l {
+  padding: 0 25px;
+}
+.github,
+.codepen {
+  padding: 0 20px;
+}
+
 /* ======= NAVBAR ======= */
 nav {
   display: flex;
