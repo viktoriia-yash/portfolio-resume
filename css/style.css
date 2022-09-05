@@ -205,7 +205,7 @@
 .contact-links,
 .my-work-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px 0;
 }
 /* ======= NAVBAR ======= */
