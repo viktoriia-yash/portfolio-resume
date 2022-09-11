@@ -93,7 +93,7 @@
 .container-about-two {
   display: flex;
   width: 50%;
-  margin: 40px auto;
+  margin: 40px auto 70px auto;
   align-items: center;
 }
 
