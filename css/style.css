@@ -46,6 +46,18 @@
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
+.footer {
+  text-align: center;
+  padding: 0 0 30px 0;
+  font-size: 13px;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 900;
+}
 /* ======= ABOUT PAGE ======= */
 .container-about-one {
   display: flex;
@@ -359,6 +371,10 @@ nav {
   .container-about-two {
     width: 60%;
   }
+
+  .homepage-greeting {
+  font-size: 8em;
+}
 }
 
 .nav-active {
