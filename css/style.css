@@ -105,7 +105,7 @@
 .container-about-two {
   display: flex;
   width: 50%;
-  margin: 40px auto 70px auto;
+  margin: 40px auto 50px auto;
   align-items: center;
 }
 
@@ -125,7 +125,6 @@
   color: #000;
   font-weight: 900;
   text-transform: uppercase;
-  position: relative;
 }
 
 .codepen-l a::after {
@@ -328,6 +327,10 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .navbar-links {
     width: 60%;
   }
@@ -346,6 +349,7 @@ nav {
   body {
     overflow-x: hidden;
   }
+
   .navbar-links {
     position: absolute;
     right: 0;
@@ -373,8 +377,13 @@ nav {
   }
 
   .homepage-greeting {
-  font-size: 8em;
-}
+    font-size: 5em;
+  }
+
+  .homepage-introduction {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
 }
 
 .nav-active {
