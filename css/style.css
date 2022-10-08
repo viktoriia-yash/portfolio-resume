@@ -133,7 +133,7 @@ body {
 }
 
 .portfolio-desc {
-  margin: 10px 0;
+  margin: 10px 0 15px 0;
   font-size: 16px;
 }
 
@@ -165,7 +165,6 @@ body {
   font-size: 45px;
   text-transform: uppercase;
   text-align: center;
-  color: #000;
 }
 
 .contact-text p {
@@ -180,7 +179,6 @@ body {
   color: #000;
   font-weight: 900;
   text-transform: uppercase;
-  color: #000;
   margin: 0 -0.25rem;
   padding: 0.55rem 0.55rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -253,6 +251,10 @@ nav {
     overflow-x: hidden;
   }
 
+  .my-photo {
+    width: 200px;
+  }
+
   .container-about-one {
     width: 70%;
   }
@@ -284,16 +286,16 @@ nav {
   }
 
   .navigation-two {
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    top: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    height: 100vh;
     width: 100%;
+    top: 2vh;
+    right: 0;
+    position: absolute;
+    background-color: #fff;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
