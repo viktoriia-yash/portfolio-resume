@@ -1,7 +1,10 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container,
@@ -157,7 +160,7 @@ body {
   display: flex;
   align-items: center;
   width: 50%;
-  margin: 40px auto;
+  margin: 0 auto;
   min-height: 80vh;
 }
 
@@ -171,7 +174,7 @@ body {
   font-size: 17px;
   line-height: 150%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .contact-text a {
@@ -182,7 +185,7 @@ body {
   margin: 0 -0.25rem;
   padding: 0.55rem 0.55rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .contact-text a:hover {
@@ -190,20 +193,14 @@ body {
   color: #fff;
 }
 
-.contact-links,
-.my-work-links {
+.contact-links {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 30px 0 0 0;
 }
 
 .linkedin-l,
 .email-l {
-  padding: 0 25px;
-}
-
-.github,
-.codepen {
   padding: 0 20px;
 }
 
