@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ======= Animation ======= */
 
 .container,
 .about-page,
@@ -25,6 +27,8 @@
     transform: rotateX(0);
   }
 }
+
+/* ======= Home page======= */
 
 .container {
   display: flex;
@@ -66,6 +70,8 @@
   font-size: 20px;
 }
 
+/* ======= About me page ======= */
+
 .container-about-one {
   display: flex;
   width: 45%;
@@ -82,6 +88,7 @@
 .box-two p {
   font-size: 15px;
   line-height: 150%;
+  padding-bottom: 15px;
 }
 
 .ratatouille {
@@ -95,7 +102,8 @@
   margin: 35px auto;
 }
 
-/* ======= PORTFOLIO ======= */
+/* ======= Portfolio page ======= */
+
 .portfolio-page {
   width: 70%;
   margin: 30px auto;
@@ -156,6 +164,8 @@
   color: #fff;
 }
 
+/* ======= Contact me page ======= */
+
 .container-contact {
   display: flex;
   align-items: center;
@@ -204,7 +214,7 @@
   padding: 0 20px;
 }
 
-/* Navbar Two */
+/* ======= Nav bar two ======= */
 nav {
   display: flex;
   justify-content: space-around;
