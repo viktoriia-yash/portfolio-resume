@@ -109,18 +109,6 @@
   margin: 30px auto;
 }
 
-.codepen-l-container {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.codepen-l {
-  text-decoration: none;
-  color: #000;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 .portfolio-content {
   display: grid;
   grid: auto / repeat(auto-fit, minmax(15em, 1fr));
